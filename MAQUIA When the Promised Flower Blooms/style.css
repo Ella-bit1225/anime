@@ -80,15 +80,23 @@ header{
     display: block;
     margin-bottom: 30px; /* 調整這個數值來控制間距 */
 }
-.swiper{
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+.swiper {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
+    line-height: 0; /* ← 關鍵：消除 inline 殘留空隙 */
+    font-size: 0;   /* ← 雙保險 */
 }
-.swiper img{
+
+.swiper img {
     width: 100%;
     display: block;
+    vertical-align: top;
+    margin-bottom: 0; /* ← 加這行覆蓋掉 .gallery img 的設定 */
+}
+.swiper-slide {
+    line-height: 0;
 }
 .poster{
     display: flex;
