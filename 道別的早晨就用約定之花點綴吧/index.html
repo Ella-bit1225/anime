@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動畫作品介紹</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <div class="logo">
+            CHRONICLE 札記
+        </div>
+        <div class="menu">
+            ☰
+        </div>
+    </header>
+    <!-- 主視覺 -->
+    <section class="hero">
+        <img src="images/main.png" alt="道別的早晨就用約定之花點綴吧">
+    </section>
+    
+    <div class="video">
+        <a href="https://anime1.me/7048" target="_blank"><img src="images/Video.png" alt="影片"></a>
+    </div>
+
+    <section class="info">
+        <p>上映：2018年·1小時59分鐘</p>
+        <p>類型：動畫電影</p>
+    </section>
+    <section class="story">
+        <p>
+            伊歐夫村莊的摧毀,敘述失去家園的伊歐夫少女,瑪琪雅的流浪故事。
+            這名幸運逃過一劫的少女,在森林中意外碰到一名嬰兒。
+            也許是觸景傷情,也許是為尋求一個寄託,瑪琪雅將緊抱住嬰兒的母親屍身給挪開。
+            她將這名嬰兒視為自己的昔日織,帶著嬰兒走出森林,踏入塵世之中。
+            走進這段,自己從來不曾想像,述說著愛與別離的世俗之路……
+        </p>
+    </section>
+    <section class="gallery">
+        <iframe class="key" src="https://www.youtube.com/embed/SV5ZGYAGAX8?si=R78CPUoXUuOw-z0N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- <img class="normal-image" src="images/Frame 4.png"> -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/image.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/image 2.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/image 3.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/image 4.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="story">
+        <p>
+            『經紗是那流逝的光陰，四季逡巡、盡染層雲。緯紗是這人世的浮沉，舉步踏堙、蕩漾心靈。伊歐夫的子民，只是一心織下昔日。百年不移、究其一生……』。伊歐夫，傳說中的古老種族，因長壽的壽命而被視為遠古的傳說。遽聞，當伊歐夫成長到14、15歲後，就會停止成長，因此族民們均保持著少年、少女的容貌，也因格外長壽的緣故，伊歐夫們見證了人世間的悲歡離合，故又被稱為「別離一族」。
+            以紡紗為業的伊歐夫，將種種的故事紡織成紗。他們所紡的昔日織物如其名，是紀錄歷史、生命、時光的美麗綢緞。一直以來，伊歐夫都居住在遠離塵世的世外桃源。然而，軍事強國梅薩蒂為確保自身的古老血脈能繼續發揮政治威懾。派遣軍人們騎乘古代飛獸雷納特劫掠伊歐夫女性，以讓伊歐夫血統與皇室血脈結合。在戰火的摧殘下，美麗的昔日織出現了破洞，歷史以烈火在昔日織上留下恐怖的見證。
+        </p>
+    </section>
+    <div class="kv">
+        <h2>主視覺/</h2>
+    </div>
+    <section class="poster">        
+        <div>
+            <img src="images/image 11.png">
+            <img src="images/Frame 22.png">
+        </div>        
+    </section>
+
+    <footer class="footer">
+        <p>CHRONICLE 札記</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            effect:"fade",
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+</html>
