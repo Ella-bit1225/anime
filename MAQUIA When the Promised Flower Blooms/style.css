@@ -79,6 +79,7 @@ header{
     aspect-ratio: 16 / 9;
     display: block;
     margin-bottom: 30px; /* 調整這個數值來控制間距 */
+    border-radius: 45px;
 }
 .swiper {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
