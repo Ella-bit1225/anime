@@ -63,7 +63,8 @@ header{
     text-align: justify;
 }
 .kv{
-    padding-left: 125px;
+    width: 80%;
+    margin: 0 auto;
 }
 .gallery{
     width: 85%;
@@ -88,6 +89,11 @@ header{
     overflow: hidden;
     line-height: 0; /* ← 關鍵：消除 inline 殘留空隙 */
     font-size: 0;   /* ← 雙保險 */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: white;
 }
 
 .swiper img {
